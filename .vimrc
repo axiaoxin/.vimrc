@@ -236,6 +236,7 @@ if exists("$VIRTUAL_ENV")
 else
     autocmd FileType python map <buffer> <F5> :AsyncRun python %:p<CR>
 endif
+autocmd FileType go map <buffer> <F5> :GoRun<CR>
 
 " <F6> 新建标签页
 map <F6> <Esc>:tabnew<CR>
@@ -318,6 +319,8 @@ nnoremap <leader>fm :LeaderfMru<CR>
 " vim-go
 let g:go_test_show_name = 1
 let g:go_fmt_command="gopls"
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 let g:go_gopls_gofumpt=1
 let g:go_highlight_types = 1 " 高亮显示 type 后的名称
 let g:go_highlight_fields = 1 " 高亮显示结构体字段
