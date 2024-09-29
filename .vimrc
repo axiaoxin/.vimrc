@@ -257,9 +257,9 @@ nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
 " 大小写转换并自动在前面加 _ （用于 abc`D`ef -> abc_def ）
-nnoremap ! i_<esc>l~
+nnoremap <leader>_ i_<esc>l~
 " 删除当前字符并对后面的字符进行大小写转换 （用于 abc`_`def -> abcDef ）
-nnoremap @ x~
+nnoremap <leader>x x~
 
 " 在 Normal Mode 和 Visual/Select Mode 下，利用 > 键和 < 键来缩进文本
 nnoremap > >>
